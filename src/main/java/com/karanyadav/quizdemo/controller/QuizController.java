@@ -20,6 +20,7 @@ public class QuizController {
     public ResponseEntity<List<questiondb>> createQuestions(@RequestParam String quizTitle, @RequestParam Integer noOfQuestion, @RequestParam String category){
 //        return new ResponseEntity<>("I m here", HttpStatus.OK);
         return quizService.createQuiz(quizTitle,noOfQuestion,category);
+        //this is to create quiz
 
     }
     @GetMapping("quizQuestions/{id}")
